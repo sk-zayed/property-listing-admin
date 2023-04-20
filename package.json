@@ -1,15 +1,23 @@
 {
-  "name": "property-exchange-client",
+  "name": "property-exchange-admin",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && rimraf ../property-exchange-server/public && copyfiles -u 1 ./dist/**/* ../property-exchange-server/public",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "axios": "^1.3.5",
+    "copyfiles": "^2.4.1",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "element-plus": "^2.3.3",
+    "rimraf": "^5.0.0",
+    "vue": "^3.2.13",
+    "vue-router": "^4.1.6",
+    "vuex": "^4.0.2",
+    "web3": "^1.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

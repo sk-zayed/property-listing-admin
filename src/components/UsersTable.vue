@@ -49,7 +49,7 @@
             <el-col tag="b" :span="6">Email verified</el-col>
             <el-col :span="18">{{ user.emailVerified }}</el-col>
             <el-col tag="b" :span="6">Aadhaar</el-col>
-            <el-col :span="18">Image</el-col>
+            <el-col :span="18"><img src="../../public/aadhaar.png" style="width: 100%" alt=""></el-col>
         </el-row>
         <template #footer>
             <div class="footer">

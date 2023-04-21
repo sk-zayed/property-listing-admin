@@ -1,4 +1,4 @@
-# property-exchange-client
+# property-exchange-admin
 
 ## Project setup
 ```

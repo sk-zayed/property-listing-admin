@@ -20,18 +20,22 @@ const getProperties = async () => {
 
 const verifyUser = async (id) => {
     return await axios.patch(`${config.BASE_URL}/api/admin/verify-user/${id}`);
-}
+};
 
 const deleteUser = async (id) => {
     return await axios.delete(`${config.BASE_URL}/api/admin/delete-user/${id}`);
 };
 
 const verifyProperty = async (id) => {
-    return await axios.patch(`${config.BASE_URL}/api/admin/verify-property/${id}`);
-}
+    return await axios.patch(
+        `${config.BASE_URL}/api/admin/verify-property/${id}`
+    );
+};
 
 const deleteProperty = async (id) => {
-    return await axios.delete(`${config.BASE_URL}/api/admin/delete-property/${id}`);
+    return await axios.delete(
+        `${config.BASE_URL}/api/admin/delete-property/${id}`
+    );
 };
 
 export default {
@@ -41,5 +45,5 @@ export default {
     verifyUser,
     deleteUser,
     verifyProperty,
-    deleteProperty
-}
+    deleteProperty,
+};

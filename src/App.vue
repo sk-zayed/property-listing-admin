@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
     <el-container>
-      <el-aside width="200px">
+      <el-aside width="10%">
         <el-menu
           :default-active="$route.path"
           class="el-menu-vertical-demo"
@@ -370,5 +370,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h1 {
+  margin: 0.5em 0;
+  display: flex;
 }
 </style>

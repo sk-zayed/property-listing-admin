@@ -66,8 +66,6 @@
             >
             <el-col tag="b" :span="6">Posted on</el-col>
             <el-col :span="18">{{ property.postedOn }}</el-col>
-            <el-col tag="b" :span="6">Aadhaar</el-col>
-            <el-col :span="18">Image</el-col>
         </el-row>
         <template #footer>
             <div class="footer">

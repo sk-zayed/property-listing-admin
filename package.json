@@ -1,10 +1,10 @@
 {
-  "name": "property-exchange-admin",
+  "name": "property-listing-admin",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && rimraf ../property-exchange-server/public && copyfiles -u 1 ./dist/**/* ../property-exchange-server/public",
+    "build": "vue-cli-service build && rimraf ../property-listing-server/public && copyfiles -u 1 ./dist/**/* ../property-listing-server/public",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

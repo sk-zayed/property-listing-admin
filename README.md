@@ -1,4 +1,4 @@
-# property-exchange-admin
+# property-listing-admin
 
 ## Project setup
 ```

@@ -35,9 +35,6 @@
 </template>
 
 <script>
-/*
- * responsive (collapse on small screens) - https://element-plus.org/en-US/component/layout.html#utility-classes-for-hiding-elements
- */
 
 import store from "@/store";
 import { ElNotification } from "element-plus";

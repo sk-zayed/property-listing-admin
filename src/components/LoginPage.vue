@@ -4,6 +4,8 @@
         label-width="100px"
         :model="form"
         style="max-width: 460px"
+        v-loading="loginLoading"
+        element-loading-text="Loggin you in..."
     >
         <el-form-item label="Email">
             <el-input placeholder="Email" type="email" v-model="form.email" />
@@ -25,6 +27,7 @@ export default {
     name: "LoginPage",
     data() {
         return {
+            loginLoading: false,
             form: {
                 email: "",
                 password: "",
@@ -33,6 +36,7 @@ export default {
     },
     methods: {
         async login() {
+            this.loginLoading = true;
             store
                 .dispatch("login", this.form)
                 .then((user) => {
@@ -51,6 +55,9 @@ export default {
                     });
                     this.form.email = "";
                     this.form.password = "";
+                })
+                .finally(() => {
+                    this.loginLoading = false;
                 });
         },
     },
